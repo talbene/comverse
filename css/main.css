@@ -63,6 +63,7 @@ h1 {
 	font-weight: lighter;
 	color: white;
 	font-size: 2.6em;
+	line-height: 1;
 }
 
 h2 {	
@@ -84,12 +85,14 @@ h1 span {
 
 header {
 	background-color: #fff;
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
 	width: 100%;
   	height: 95px;
   	margin-top: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
 	color: #585951;
+	z-index: 40;
 }
 
 .wrapper_header {
@@ -123,7 +126,7 @@ header {
     position: absolute;
 	left: 220px;
 	top: 60px;
-	z-index: 10;
+	z-index: 50;
 }
 
 
@@ -158,13 +161,13 @@ header {
 	color: #333;
 	display: block;
 	text-align: center;
-	line-height: 3.5;
+	line-height: 2;
 	text-decoration: none;
-	width: 125px;
+	padding: 8px;
 	height: 40px;
 	font-family: 'Open Sans', sans-serif;	
 	font-weight: lighter;
-	font-size: 0.2em;
+	font-size: 0.65em;
 
 }
 
@@ -173,9 +176,8 @@ header {
    	background: #fff;
    	border: 1px solid lightgray;
 	border-bottom: 0;
-	box-shadow: -10px 10px 5px #888888;
+	box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.09);
 	color: #1b8dc6;
-
 }
 
 .nav > li > ul {
@@ -283,13 +285,13 @@ article {
   	position: relative;
 }
 
-.wrapper_slide :nth-child(2) {
+.wrapper_slide p {
 	font-family: 'Open Sans', sans-serif;	
 	font-weight: lighter;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.5;
-	margin-top: 0.8em;
+	margin-top: 12px;
 }
 
 /* button ---> */
@@ -298,10 +300,11 @@ article {
 .btn-blue:hover
 {
 	background-color: #1b8dc6;
+    box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
 	width: 180px;
 	height: 36px;
 	position: relative;
-	border-radius: 8px;
+	border-radius: 6px;
 	padding-left: 11px;
 	border: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -372,27 +375,33 @@ article {
 	position: absolute;
 	left: 0;
 	top: 355px;
+	background-color:  rgba(255, 51, 153, 0.9);
+    box-shadow: 0px 1px 4px 0px #a2a2a2;
 }
 
 .box_green {
 	width: 292px;
 	height: 174px;
-	border-radius: 8px;
+	border-radius: 6px;
 	padding: 15px;
 	position: absolute;
 	top: 355px;
 	left: 50%; 
  	margin-left: -146px;
+	background-color: rgba(90, 190, 40, 0.9);
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
 }
 
 .box_orange {
 	width: 292px;
 	height: 174px;
-	border-radius: 8px;
+	border-radius: 6px;
 	padding: 15px ;
 	position: absolute;
 	right:0;
 	top: 355px;
+	background-color:  rgba(255, 102, 0, 0.9);
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
 }
 
 .box_pink h2,
@@ -420,20 +429,10 @@ article {
 	text-align: left;
 	padding-left: 10px;
 	position: absolute;
-	top: 122px; 
+	top: 140px; 
 }
 
-.box_pink {
-	background-color: rgba(255, 51, 153, 0.9);
-}
 
-.box_green {
-	background-color: rgba(90, 190, 40, 0.9);
-}
-
-.box_orange {
-	background-color: rgba(255, 102, 0, 0.9);
-}
 
 /* <---boxes */
 
@@ -448,6 +447,9 @@ article {
 	background-size: cover;
 	background-repeat: no-repeat;
   	margin: 0;
+  	box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.28);
+  	z-index: 20;
+
   }
 
 .wrapper_solutions {
@@ -495,10 +497,11 @@ article {
 .wrapper_solutions .btn-blue,
 .wrapper_solutions .btn-blue:hover  {
 	background-color: #1b8dc6;
+	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
 	width: 180px;
 	height: 36px;
 	position: relative;
-	border-radius: 8px;
+	border-radius: 6px;
 	padding-left: 11px;
 	border: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -544,6 +547,9 @@ article {
 	background-size: cover;
 	background-repeat: no-repeat;
   	margin: 0;
+  	box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.28);
+  	z-index: 10;
+
   }
 
 .wrapper_events {
@@ -596,15 +602,17 @@ article {
 
 .wrapper_date {
 	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
 	width: 296px;
 	height: 119px;
-	border-radius: 1px;
+	border-radius: 2px;
 	padding: 10px;	
 	margin-bottom: 10px; 
 }
 
 .date {
 	background-color: #1b8dc6;
+	box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
 	width: 70px;
 	height: 100px;
 	position: absolute;
@@ -913,6 +921,7 @@ aside > h1 {
 aside .btn-blue,
 aside .btn-blue:hover {
 	background-color: #1b8dc6;
+	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
 	width: 180px;
 	height: 36px;
 	padding: 10px;
