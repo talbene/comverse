@@ -423,12 +423,12 @@ article {
  {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bolder ;
-	font-size: 16px;
+	font-size: 1em;
 	color: #fff;
 	text-align: left;
 	padding-left: 10px;
 	position: absolute;
-	top: 140px; 
+	top: 135px; 
 }
 
 
